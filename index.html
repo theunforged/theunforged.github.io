@@ -1,0 +1,598 @@
+<html>
+<script>
+function openTab(tabName) {
+   var i;
+   var x = document.getElementsByClassName("tab");
+   for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+   }
+   document.getElementById(tabName).style.display = "block";
+}
+</script>
+<script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script><script src="https://wow.zamimg.com/widgets/power.js"></script>
+<style>
+html { background-color: #000; };
+.divTable{ display: table; float: left; margin: 10px 10px; }
+.divTableRow { display: table-row; background-color: #000}
+.divTableRow:hover { background-color: #222; }
+.divTableHeading { background-color: #EEE; display: table-header-group; }
+.divTableCell, .divTableHead { border: 1px solid #999999; display: table-cell; padding: 3px 10px; }
+.divPlayer { border: 1px solid #999999; display: table-cell; width: 700px; padding: 3px 10px; text-align: left; vertical-align: middle; word-wrap: normal; color: #ffffff; }
+.divClass { border: 1px solid #999999; display: table-cell; padding: 3px 10px; text-align: center; vertical-align: middle; color: #ffffff; }
+.divDKP { border: 1px solid #999999; display: table-cell; width: 200px%; padding: 3px 10px; text-align: center; vertical-align: middle; color: #ffffff; }
+.divPlayerHeader { border: 1px solid #999999; display: table-cell; font-weight: bold; width: 50%; padding: 3px 10px; text-align: left; background-color: #bbb; }
+.divClassHeader { border: 1px solid #999999; display: table-cell; font-weight: bold; width: 150px; padding: 3px 10px; text-align: center; background-color: #bbb; }
+.divDKPHeader { border: 1px solid #999999; display: table-cell; font-weight: bold; width: 30%; padding: 3px 10px; text-align: center; background-color: #bbb; }
+.divTableHeading { background-color: #EEE; display: table-header-group; font-weight: bold; }
+.divTableFoot { background-color: #EEE; display: table-footer-group; font-weight: bold; }
+.divTableBody { display: table-row-group; }
+</style>
+
+<br /><br />
+<div>
+   <button onclick="openTab('DKP')">DKP Table</button>
+   <button onclick="openTab('DKPHistory')">DKP History</button>
+   <button onclick="openTab('LootHistory')">Loot History</button>
+</div>
+<br /><br />
+<div id="DKP" class="tab"><div class="divTable" style="width: 30%;border: 1px solid #000;">
+   <div class="divTableBody">
+      <div class="divTableRow">
+         <div class="divPlayerHeader">Player</div>
+         <div class="divClassHeader">Class</div>
+         <div class="divDKPHeader">DKP</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Berloo</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Bisu</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Blaini</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Booh</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Borkylein</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Cirogue</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
+         <div class="divDKP">-50.04</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Deycide</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Faandras</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Goaeugen</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Hotsnplotz</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Huntaro</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Kaab</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Keksli</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Mahy</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Melkofas</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Mendozza</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Misooi</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
+         <div class="divDKP">-23.04</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Noedo</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
+         <div class="divDKP">-54.04</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Oltu</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Pinselaffe</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
+         <div class="divDKP">-13.04</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Proberzk</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" height="24" width="24" /></div>
+         <div class="divDKP">-22.04</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Riryoku</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Romak</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Râgnarr</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Schguet</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Shabs</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">-13.04</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Shyìa</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Sihay</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Spikeii</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">-25.04</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Toolica</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
+         <div class="divDKP">-25.04</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Torya</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Urraco</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">-47.04</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Vozov</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" height="24" width="24" /></div>
+         <div class="divDKP">-50.04</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Weekend</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Whammy</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Xadason</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Xanthir</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Xelic</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
+         <div class="divDKP">-23.04</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Xoras</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Zelathen</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
+         <div class="divDKP">11.96</div>
+      </div>
+   </div>
+</div>
+</div>
+<div id="DKPHistory" class="tab" style="display:none;"><div class="divTable" style="width: 95%;border: 1px solid #000;">
+   <div class="divTableBody">
+      <div class="divTableRow">
+         <div class="divPlayerHeader">Players</div>
+         <div class="divClassHeader" style="width: 4%;">DKP</div>
+         <div class="divDKPHeader">Date/Reason</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/08/21 21:17:27) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/08/21 21:17:04) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Berloo, Râgnarr, Schguet, Romak, Xoras, Riryoku, Oltu, Shyìa, Torya, Xanthir, Sihay, Xadason, Weekend, Whammy, Mendozza, Zelathen, Deycide, Goaeugen, Hotsnplotz, Booh, Faandras, Melkofas, Huntaro, Blaini, Bisu, Kaab, Mahy, Keksli, Borkylein, Pinselaffe, Shabs, Proberzk, Xelic, Spikeii, Toolica, Urraco, Cirogue, Vozov, Noedo, Misooi, </div>
+         <div class="divClass" style="width: 4%;">0.88</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Correcting Error<br />(01/07/21 23:57:55) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">-2.15</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/07/21 23:57:36) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Shabs, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/07/21 23:38:50) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Shabs, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/07/21 23:38:48) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Shabs, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Correcting Error<br />(01/07/21 23:38:37) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Shabs, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Correcting Error<br />(01/07/21 23:38:07) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Shabs, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/07/21 23:37:08) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Shabs, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Correcting Error<br />(01/07/21 23:37:01) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Romak, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/07/21 23:36:46) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Romak, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/07/21 23:36:44) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Romak, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Correcting Error<br />(01/07/21 23:36:40) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Romak, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Correcting Error<br />(01/07/21 23:36:26) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Romak, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/07/21 23:36:17) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Romak, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Correcting Error<br />(01/07/21 23:36:13) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Berloo, Whammy, Bisu, Xanthir, Mendozza, Blaini, Goaeugen, Booh, Borkylein, Melkofas, Hotsnplotz, Mahy, Râgnarr, Romak, Shyìa, Riryoku, Oltu, Huntaro, Xoras, Schguet, Deycide, Kaab, Weekend, Xadason, Sihay, Faandras, Zelathen, Torya, Keksli, Pinselaffe, Shabs, Proberzk, Xelic, Toolica, Spikeii, Urraco, Vozov, Cirogue, Noedo, Misooi, </div>
+         <div class="divClass" style="width: 4%;">0.93</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Correcting Error<br />(01/07/21 23:30:23) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Berloo, Whammy, Bisu, Xanthir, Mendozza, Blaini, Goaeugen, Booh, Borkylein, Melkofas, Hotsnplotz, Mahy, Râgnarr, Romak, Shyìa, Riryoku, Oltu, Huntaro, Xoras, Schguet, Deycide, Kaab, Weekend, Xadason, Sihay, Faandras, Zelathen, Torya, Keksli, Pinselaffe, Shabs, Proberzk, Xelic, Toolica, Spikeii, Urraco, Vozov, Cirogue, Noedo, Misooi, </div>
+         <div class="divClass" style="width: 4%;">0.93</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Correcting Error<br />(01/07/21 23:30:22) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Shabs, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Misooi, Schguet, Deycide, Oltu, Xoras, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">-1.19</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/07/21 23:29:52) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">-0.95</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/07/21 23:29:48) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Shabs, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Misooi, Schguet, Deycide, Oltu, Xoras, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">1.19</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Naxxramas: Noth der Seuchenfürst<br />(01/07/21 23:11:09) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0.95</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Naxxramas: Noth der Seuchenfürst<br />(01/07/21 23:07:03) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0.93</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Naxxramas: Noth der Seuchenfürst<br />(01/07/21 23:05:34) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">1.65</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Naxxramas: Noth der Seuchenfürst<br />(01/07/21 23:04:11) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(01/07/21 23:03:46) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">1.55</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Naxxramas: Noth der Seuchenfürst<br />(01/07/21 23:01:26) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0.63</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Naxxramas: Noth der Seuchenfürst<br />(01/07/21 23:00:10) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0.85</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Naxxramas: Noth der Seuchenfürst<br />(01/07/21 22:58:25) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0.63</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Naxxramas: Noth der Seuchenfürst<br />(01/07/21 22:56:58) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0.55</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Naxxramas: Noth der Seuchenfürst<br />(01/07/21 22:55:05) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0.88</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Naxxramas: Noth der Seuchenfürst<br />(01/07/21 22:53:14) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">1.55</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Naxxramas: Noth der Seuchenfürst<br />(01/07/21 22:51:52) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Naxxramas: Noth the Plaguebringer<br />(01/07/21 22:49:58) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/07/21 22:34:10) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/07/21 22:34:08) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/07/21 22:34:06) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/07/21 22:34:01) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/07/21 22:33:58) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/07/21 22:33:54) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/07/21 22:33:50) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/07/21 22:33:47) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Sihay, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Zelathen, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(01/07/21 22:33:44) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(01/07/21 22:33:26) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Naxxramas: Maexxna<br />(01/07/21 22:21:04) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(01/07/21 22:03:16) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Naxxramas: Grand Widow Faerlina<br />(01/07/21 21:51:18) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(01/07/21 21:33:01) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Naxxramas: Anub'Rekhan<br />(01/07/21 21:31:18) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">2.15</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Naxxramas: Spinne<br />(01/07/21 21:17:08) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(01/07/21 21:02:42) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Zelathen, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Sihay, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Naxxramas: Grobbulus<br />(01/07/21 20:56:28) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Pinselaffe, Torya, Shabs, Faandras, Blaini, Goaeugen, Spikeii, Romak, Bisu, Shyìa, Whammy, Cirogue, Booh, Noedo, Xelic, Proberzk, Berloo, Huntaro, Urraco, Vozov, Xanthir, Râgnarr, Toolica, Riryoku, Sihay, Xadason, Weekend, Kaab, Misooi, Schguet, Deycide, Oltu, Keksli, Xoras, Zelathen, Borkylein, Mendozza, Melkofas, Mahy, Hotsnplotz, </div>
+         <div class="divClass" style="width: 4%;">0</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Naxxramas: Patchwerk<br />(01/07/21 20:42:56) </div>
+      </div>
+   </div>
+</div>
+</div>
+<div id="LootHistory" class="tab" style="display:none;"><div class="divTable" style="width: 50%;border: 1px solid #000;">
+   <div class="divTableBody">
+      <div class="divTableRow">
+         <div class="divPlayerHeader">Loot</div>
+         <div class="divClassHeader">Player</div>
+         <div class="divDKPHeader">From</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=22368" data-wowhead="item=22368"></a> (-35 DKP)</div>
+         <div class="divClass" style="width: 20%;">Misooi</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Naxxramas: Grobbulus<br />(01/07/21 23:56:48) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=22368" data-wowhead="item=22368"></a> (86 DKP)</div>
+         <div class="divClass" style="width: 20%;">Misooi</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Naxxramas: Grobbulus<br />(01/07/21 23:56:46) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=22356" data-wowhead="item=22356"></a> (-37 DKP)</div>
+         <div class="divClass" style="width: 20%;">Urraco</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Naxxramas: Noth the Plaguebringer<br />(01/07/21 23:11:06) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=22357" data-wowhead="item=22357"></a> (-37 DKP)</div>
+         <div class="divClass" style="width: 20%;">Spikeii</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Naxxramas: Noth the Plaguebringer<br />(01/07/21 23:06:59) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=22371" data-wowhead="item=22371"></a> (-37 DKP)</div>
+         <div class="divClass" style="width: 20%;">Toolica</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Naxxramas: Noth the Plaguebringer<br />(01/07/21 23:05:27) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=22804" data-wowhead="item=22804"></a> (-66 DKP)</div>
+         <div class="divClass" style="width: 20%;">Noedo</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Naxxramas: Noth the Plaguebringer<br />(01/07/21 23:04:03) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=22806" data-wowhead="item=22806"></a> (-62 DKP)</div>
+         <div class="divClass" style="width: 20%;">Cirogue</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Naxxramas: Noth the Plaguebringer<br />(01/07/21 23:01:23) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=22355" data-wowhead="item=22355"></a> (-25 DKP)</div>
+         <div class="divClass" style="width: 20%;">Pinselaffe</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Naxxramas: Noth the Plaguebringer<br />(01/07/21 23:00:07) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=23663" data-wowhead="item=23663"></a> (-34 DKP)</div>
+         <div class="divClass" style="width: 20%;">Proberzk</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Naxxramas: Noth the Plaguebringer<br />(01/07/21 22:58:21) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=22355" data-wowhead="item=22355"></a> (-25 DKP)</div>
+         <div class="divClass" style="width: 20%;">Shabs</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Naxxramas: Noth the Plaguebringer<br />(01/07/21 22:56:52) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=22938" data-wowhead="item=22938"></a> (-22 DKP)</div>
+         <div class="divClass" style="width: 20%;">Urraco</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Naxxramas: Noth the Plaguebringer<br />(01/07/21 22:55:02) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=22361" data-wowhead="item=22361"></a> (-35 DKP)</div>
+         <div class="divClass" style="width: 20%;">Xelic</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Naxxramas: Noth the Plaguebringer<br />(01/07/21 22:53:12) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=22803" data-wowhead="item=22803"></a> (-62 DKP)</div>
+         <div class="divClass" style="width: 20%;">Vozov</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Naxxramas: Noth the Plaguebringer<br />(01/07/21 22:51:49) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=22368" data-wowhead="item=22368"></a> (-86 DKP)</div>
+         <div class="divClass" style="width: 20%;">Misooi</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Naxxramas: Grobbulus<br />(01/07/21 21:17:05) </div>
+      </div>
+   </div>
+</div>
+</div>
+</html>
